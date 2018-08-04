@@ -1,0 +1,2 @@
+在JdbcUtil中使用like参数：
+List<ParamBo> list = JdbcUtil.executeSql20Object(sql,new[]{"%"+courceTable",%"},ParamBo.class);
