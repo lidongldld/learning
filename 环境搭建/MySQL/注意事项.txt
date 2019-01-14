@@ -1,0 +1,18 @@
+.LOG
+
+msyql 忘记密码处理办法：
+	一windows环境下：
+		1、在bin目录下的cmd执行：mysqld -nt --skip-grant-tables
+		2、再在第二个cmd执行：mysql -uroot -p，Enter进入数据库
+		3、update MySQL.user set authentication_string=password('root') where user='root';
+		4、flush privileges;
+		5、exit;
+	二linux环境下：
+		1、vim /etc/my.cnf 加入skip-grant-tables
+		2、重启MySQL， /etc/init.d/mysqld restart
+		3、终端输入 mysql 直接登录MySQL数据库，然后use mysql
+		4、update mysql.user set authentication_string=password('root') where user='root' ;
+			mysql5.7更改密码应该采用命令ALTER USER 'root'@'localhost'IDENTIFIED BY '********'详见 http://blog.csdn.net/u010603691/article/details/50541979
+		5、编辑my.cnf文件删掉skip-grant-tables 这一行，然后重启MySQL，/etc/init.d/mysqld restart，否则MySQL仍能免密码登录
+		6、mysql -u root -p 然后输入密码即可登录MySQL数据库
+下午 7:28 2018/10/14 星期日

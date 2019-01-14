@@ -1,0 +1,4 @@
+1、执行在plsql中执行 select userenv('language') from dual;
+2、设置本地环境变量:NLS_LANG， 进入 我的电脑,属性,高级,环境变量,添加1项:
+  NLS_LANG="AMERICAN_AMERICA.ZHS16GBK"
+（注意：这里要根据你的ORACLE服务器的这三个值进行拼接哦~不要复制粘贴）
