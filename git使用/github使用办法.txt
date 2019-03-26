@@ -1,0 +1,33 @@
+
+配置用户信息
+	git config --global user.name "Your Name"
+	git config --global user.email "email@example.com"
+
+
+使用git config --list可查看配置的相关信息, 出现以下信息, 则表明成功:
+
+生成ssh公钥:
+	1、ssh-keygen -t rsa -C "email@example.com"  
+		# Generating public/private rsa key pair...
+		# 三次回车即可生成 ssh key, 这里的邮箱最好填和刚才一样的
+	2、然后用文本编辑器(如notepad)打开id_rsa.pub这个文件（c:\用户\administrator\.ssh\id_rsa.pub）, 全选复制.
+	3、粘贴到公钥填写处, 标题可以任意填, 以区别不同的电脑!（登录git，其页面上有ssh公钥页面）
+	4、最后在git-bash中输入: 
+		ssh -T git@gitee.com
+		如果出现：‘Welcome to Gitee.com’,就表示登录成果。
+
+初始化本地仓库：
+	1、: 在你要提交的目录下, git init 
+	2、和远程刚创建的仓库连接, git remote add origin git@gitee.com:menglanyingfei/matlablearning.git
+	3、push前先将远程repository的修改pull(拉)下来, 避免之前本地仓库和远程仓库不一致, 导致提交出错! 
+		git pull origin master
+		
+本地作出修改并提交：
+	1、git add . 
+		# 将添加的提交到列表上
+	2、git commit -m 'first commit'
+		# 提交你的文件, 添加消息”第一次提交”
+	3、git push origin master
+		#发送你的提交到GitHub
+	4、git status
+		# 查看git状态
