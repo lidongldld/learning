@@ -1,0 +1,23 @@
+<div id="div">这是一个盒子</div>
+var div = document.getElementById("div");
+
+第一种:用cssText
+div.style.cssText='width:600px;height:250px;border:1px red solid;text-align: center;line-height: 250px;';
+
+第二种：用setProperty()
+div.style.setProperty('width','700px');
+div.style.setProperty('height','300px');
+div.style.setProperty('line-height','300px');
+div.style.setProperty('background','#f00');
+div.style.setProperty('color','#fff');
+div.style.setProperty('border','1px solid blue');
+div.style.setProperty('text-align','center');
+
+第三种：使用css属性对应的style属性
+div.style.width = "800px";
+div.style.height = "250px"; 
+div.style.lineHeight = "250px"; 
+div.style.background = "#000";
+div.style.color = "#fff";
+div.style.border = "1px solid #111";
+div.style.textAlign = "center";
