@@ -1,5 +1,8 @@
 ﻿文件服务器：77.1.33.41
 
+1、不是很上进，2、做事有点摸，3、不节约：没有太多钱的时候要节约，4、走路的时候要抬头挺胸，5、太喜欢	看她的手机，6没有力量、缺少锻炼，7需要注重仪式感。
+2、比较勤快，懂事，2、肢体语言。
+
 listagg函数可以替换wm_concat函数：
 	select phone, listagg(log_name, ',') within group(order by phone) logName
 	from int_phone
