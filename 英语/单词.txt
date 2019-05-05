@@ -1,0 +1,6 @@
+2019-5-5
+	1、审批：Approval 
+		The testing and approval of new drugs will be speeded up.
+		新药品的检测和审批速度将会加快。
+		This is subject to your approval.
+		请你审批。
