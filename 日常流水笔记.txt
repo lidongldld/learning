@@ -76,7 +76,8 @@ listagg函数可以替换wm_concat函数：
 			测试：在浏览器中输入http://localhost:80/，并回车。
 
 
-
+单元测试：
+	https://blog.csdn.net/hanzl1/article/details/78983939
 
 
 2019-3-11
@@ -207,4 +208,3 @@ listagg函数可以替换wm_concat函数：
 		调用的中间表是cq_cz_dygh,移交的中间表是cq_transfer_property。
 		5-24-->已完成。
 	#邢专需要添加跳转，用户没有录入案件采集的，使用39的案件状态，允许用户补录立案数据采集。
-	
