@@ -31,6 +31,51 @@ listagg函数可以替换wm_concat函数：
 	where phone = '13350162230'
 	group by phone;
 
+	zheng:
+		mysql:
+			安装：1、先解压到某个文件夹下，
+					 2、如下修改my.ini，并将my.ini放到bin文件夹下：
+						[mysql]
+						# 设置mysql客户端默认字符集
+						default-character-set=utf8
+						[mysqld]
+						#设置3306端口
+						port = 3306
+						# 设置mysql的安装目录
+						basedir=E:/mysql-5.7.12-winx64
+						# 设置mysql数据库的数据的存放目录
+						datadir=E:/mysql-5.7.12-winx64/data
+						# 允许最大连接数
+						max_connections=200
+						# 服务端使用的字符集默认为8比特编码的latin1字符集
+						character-set-server=utf8
+						# 创建新表时将使用的默认存储引擎
+						default-storage-engine=INNODB
+					3、在dos窗口里面输入：mysqld --initialize --user=mysql --console，记住它生成的临时密码。
+					4、mysqld install MySQL --defaults-file="C:\mysql-5.7.12-winx64\bin\my.ini"即可完成安装。
+					5、
+			配置：
+				Mysql可以支持不同的SQL模式，不同的SQL模式会有不同的语法，执行不同的数据校验简查。
+				show variables like 'sql_mode';
+				set sql_mode=(select replace(@@sql_mode,'NO_ZERO_IN_DATE,NO_ZERO_DATE',''));
+				set sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+			启动：net start mysql
+			测试：mysql -r root -p Lwd123456...
+
+		redis:
+			安装：解压到某个文件夹下即可
+			启动：redis-server.exe redis.windows.conf
+			测试：redis-cli.exe -h 127.0.0.1 -p 6379
+		zookeeper:
+			安装：解压后修改conf目录下的zoo_sample.cfg，并改名为zoo.cfg
+			启动：zkServer.cmd
+			测试：zkCli.cmd 127.0.0.1:2181
+		ngnix:
+			安装：解压后，直接双击nginx.exe。在config/nginx.conf中有默认端口的配置。
+			启动：再cmd中输入nginx.exe,并回车。
+			测试：在浏览器中输入http://localhost:80/，并回车。
+
+
 
 
 
