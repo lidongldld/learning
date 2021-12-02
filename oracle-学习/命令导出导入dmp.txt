@@ -1,0 +1,3 @@
+exp scjd/"""wonderS,scjd"""@10.1.93.215:1521/orcl  file=d:\scjd.dmp log=d:\exp1.log full=y
+
+exp scjd_app/"""wonders"""@10.1.93.215:1521/orcl  file=d:\scjd_app.dmp log=d:\exp1.log full=y
