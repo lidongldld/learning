@@ -1,0 +1,14 @@
+.LOG
+
+1、启动：redis-server redis.windows.conf
+2、设置服务命令redis-server --service-install redis.windows-service.conf --loglevel verbose
+3、常用的redis服务命令。
+	卸载服务：redis-server --service-uninstall
+	开启服务：redis-server --service-start
+	停止服务：redis-server --service-stop
+4、密码:
+	找到redis.windows.conf配置文件,搜索：requirepass，找到它，看看是不是有密码，这里我的密码是redis-abc123456
+5、有密码后
+	登录cli的时候输入 ./redis-cli -h 127.0.0.1 -p 6379 -a Passw0rd
+	或者
+	先./redis-cli ,再输入auth +空格+ 刚才设置的密码。

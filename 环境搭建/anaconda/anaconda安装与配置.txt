@@ -1,0 +1,23 @@
+.LOG
+
+一、anaconda 修改数据源：
+	conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+	conda config --set show_channel_urls yes
+二、pip修改数据源
+	pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy
+	或者
+	在：C:\Users\xx\pip，新建文件pip.ini
+	内容如下：
+ 		[global]
+ 		index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+三、conda 可以为你不同的项目建立不同的运行环境。
+	1、创建环境
+	conda create –n python36 python=3.6
+	2、进入环境
+	conda activate python27
+	3、离开环境
+	deactivate
+	4、共享环境
+	conda env export > environment.yaml
+
+以上三点摘录自：https://blog.csdn.net/program_developer/article/details/79677557
