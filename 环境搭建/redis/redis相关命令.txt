@@ -1,14 +1,15 @@
 .LOG
 
-1¡¢Æô¶¯£ºredis-server redis.windows.conf
-2¡¢ÉèÖÃ·şÎñÃüÁîredis-server --service-install redis.windows-service.conf --loglevel verbose
-3¡¢³£ÓÃµÄredis·şÎñÃüÁî¡£
-	Ğ¶ÔØ·şÎñ£ºredis-server --service-uninstall
-	¿ªÆô·şÎñ£ºredis-server --service-start
-	Í£Ö¹·şÎñ£ºredis-server --service-stop
-4¡¢ÃÜÂë:
-	ÕÒµ½redis.windows.confÅäÖÃÎÄ¼ş,ËÑË÷£ºrequirepass£¬ÕÒµ½Ëü£¬¿´¿´ÊÇ²»ÊÇÓĞÃÜÂë£¬ÕâÀïÎÒµÄÃÜÂëÊÇredis-abc123456
-5¡¢ÓĞÃÜÂëºó
-	µÇÂ¼cliµÄÊ±ºòÊäÈë ./redis-cli -h 127.0.0.1 -p 6379 -a Passw0rd
-	»òÕß
-	ÏÈ./redis-cli ,ÔÙÊäÈëauth +¿Õ¸ñ+ ¸Õ²ÅÉèÖÃµÄÃÜÂë¡£
+1ã€å¯åŠ¨ï¼šredis-server redis.windows.conf
+2ã€è®¾ç½®æœåŠ¡å‘½ä»¤redis-server --service-install redis.windows-service.conf --loglevel verbose
+3ã€å¸¸ç”¨çš„redisæœåŠ¡å‘½ä»¤ã€‚
+	å¸è½½æœåŠ¡ï¼šredis-server --service-uninstall
+	å¼€å¯æœåŠ¡ï¼šredis-server --service-start
+	åœæ­¢æœåŠ¡ï¼šredis-server --service-stop
+4ã€å¯†ç :
+	æ‰¾åˆ°redis.windows.confé…ç½®æ–‡ä»¶,æœç´¢ï¼šrequirepassï¼Œæ‰¾åˆ°å®ƒï¼Œçœ‹çœ‹æ˜¯ä¸æ˜¯æœ‰å¯†ç ï¼Œè¿™é‡Œæˆ‘çš„å¯†ç æ˜¯redis-abc123456
+5ã€æœ‰å¯†ç å
+	ç™»å½•cliçš„æ—¶å€™è¾“å…¥ ./redis-cli -h 127.0.0.1 -p 6379 -a Passw0rd
+	æˆ–è€…
+	å…ˆ./redis-cli ,å†è¾“å…¥auth +ç©ºæ ¼+ åˆšæ‰è®¾ç½®çš„å¯†ç ã€‚
+ä¸‹åˆ 9:51 2024/6/23 æ˜ŸæœŸæ—¥

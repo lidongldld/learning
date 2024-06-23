@@ -1,18 +1,20 @@
 .LOG
 
-msyql Íü¼ÇÃÜÂë´¦Àí°ì·¨£º
-	Ò»windows»·¾³ÏÂ£º
-		1¡¢ÔÚbinÄ¿Â¼ÏÂµÄcmdÖ´ĞĞ£ºmysqld -nt --skip-grant-tables
-		2¡¢ÔÙÔÚµÚ¶ş¸öcmdÖ´ĞĞ£ºmysql -uroot -p£¬Enter½øÈëÊı¾İ¿â
-		3¡¢update MySQL.user set authentication_string=password('root') where user='root';
-		4¡¢flush privileges;
-		5¡¢exit;
-	¶şlinux»·¾³ÏÂ£º
-		1¡¢vim /etc/my.cnf ¼ÓÈëskip-grant-tables
-		2¡¢ÖØÆôMySQL£¬ /etc/init.d/mysqld restart
-		3¡¢ÖÕ¶ËÊäÈë mysql Ö±½ÓµÇÂ¼MySQLÊı¾İ¿â£¬È»ºóuse mysql
-		4¡¢update mysql.user set authentication_string=password('root') where user='root' ;
-			mysql5.7¸ü¸ÄÃÜÂëÓ¦¸Ã²ÉÓÃÃüÁîALTER USER 'root'@'localhost'IDENTIFIED BY '********'Ïê¼û http://blog.csdn.net/u010603691/article/details/50541979
-		5¡¢±à¼­my.cnfÎÄ¼şÉ¾µôskip-grant-tables ÕâÒ»ĞĞ£¬È»ºóÖØÆôMySQL£¬/etc/init.d/mysqld restart£¬·ñÔòMySQLÈÔÄÜÃâÃÜÂëµÇÂ¼
-		6¡¢mysql -u root -p È»ºóÊäÈëÃÜÂë¼´¿ÉµÇÂ¼MySQLÊı¾İ¿â
-ÏÂÎç 7:28 2018/10/14 ĞÇÆÚÈÕ
+msyql å¿˜è®°å¯†ç å¤„ç†åŠæ³•ï¼š
+	ä¸€windowsç¯å¢ƒä¸‹ï¼š
+		1ã€åœ¨binç›®å½•ä¸‹çš„cmdæ‰§è¡Œï¼šmysqld -nt --skip-grant-tables
+		2ã€å†åœ¨ç¬¬äºŒä¸ªcmdæ‰§è¡Œï¼šmysql -uroot -pï¼ŒEnterè¿›å…¥æ•°æ®åº“
+		3ã€update MySQL.user set authentication_string=password('root') where user='root';
+		4ã€flush privileges;
+		5ã€exit;
+	äºŒlinuxç¯å¢ƒä¸‹ï¼š
+		1ã€vim /etc/my.cnf åŠ å…¥skip-grant-tables
+		2ã€é‡å¯MySQLï¼Œ /etc/init.d/mysqld restart
+		3ã€ç»ˆç«¯è¾“å…¥ mysql ç›´æ¥ç™»å½•MySQLæ•°æ®åº“ï¼Œç„¶åuse mysql
+		4ã€update mysql.user set authentication_string=password('root') where user='root' ;
+			mysql5.7æ›´æ”¹å¯†ç åº”è¯¥é‡‡ç”¨å‘½ä»¤ALTER USER 'root'@'localhost'IDENTIFIED BY '********'è¯¦è§ http://blog.csdn.net/u010603691/article/details/50541979
+		5ã€ç¼–è¾‘my.cnfæ–‡ä»¶åˆ æ‰skip-grant-tables è¿™ä¸€è¡Œï¼Œç„¶åé‡å¯MySQLï¼Œ/etc/init.d/mysqld restartï¼Œå¦åˆ™MySQLä»èƒ½å…å¯†ç ç™»å½•
+		6ã€mysql -u root -p ç„¶åè¾“å…¥å¯†ç å³å¯ç™»å½•MySQLæ•°æ®åº“
+ä¸‹åˆ 7:28 2018/10/14 æ˜ŸæœŸæ—¥
+
+ä¸‹åˆ 9:51 2024/6/23 æ˜ŸæœŸæ—¥

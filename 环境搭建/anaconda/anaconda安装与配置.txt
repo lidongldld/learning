@@ -1,23 +1,24 @@
 .LOG
 
-Ò»¡¢anaconda ĞŞ¸ÄÊı¾İÔ´£º
+ä¸€ã€anaconda ä¿®æ”¹æ•°æ®æºï¼š
 	conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 	conda config --set show_channel_urls yes
-¶ş¡¢pipĞŞ¸ÄÊı¾İÔ´
+äºŒã€pipä¿®æ”¹æ•°æ®æº
 	pip install -i https://pypi.tuna.tsinghua.edu.cn/simple numpy
-	»òÕß
-	ÔÚ£ºC:\Users\xx\pip£¬ĞÂ½¨ÎÄ¼şpip.ini
-	ÄÚÈİÈçÏÂ£º
+	æˆ–è€…
+	åœ¨ï¼šC:\Users\xx\pipï¼Œæ–°å»ºæ–‡ä»¶pip.ini
+	å†…å®¹å¦‚ä¸‹ï¼š
  		[global]
  		index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-Èı¡¢conda ¿ÉÒÔÎªÄã²»Í¬µÄÏîÄ¿½¨Á¢²»Í¬µÄÔËĞĞ»·¾³¡£
-	1¡¢´´½¨»·¾³
-	conda create ¨Cn python36 python=3.6
-	2¡¢½øÈë»·¾³
+ä¸‰ã€conda å¯ä»¥ä¸ºä½ ä¸åŒçš„é¡¹ç›®å»ºç«‹ä¸åŒçš„è¿è¡Œç¯å¢ƒã€‚
+	1ã€åˆ›å»ºç¯å¢ƒ
+	conda create â€“n python36 python=3.6
+	2ã€è¿›å…¥ç¯å¢ƒ
 	conda activate python27
-	3¡¢Àë¿ª»·¾³
+	3ã€ç¦»å¼€ç¯å¢ƒ
 	deactivate
-	4¡¢¹²Ïí»·¾³
+	4ã€å…±äº«ç¯å¢ƒ
 	conda env export > environment.yaml
 
-ÒÔÉÏÈıµãÕªÂ¼×Ô£ºhttps://blog.csdn.net/program_developer/article/details/79677557
+ä»¥ä¸Šä¸‰ç‚¹æ‘˜å½•è‡ªï¼šhttps://blog.csdn.net/program_developer/article/details/79677557
+ä¸‹åˆ 9:51 2024/6/23 æ˜ŸæœŸæ—¥
